@@ -27,8 +27,8 @@ function loadCharacterCards(characters) {
       <h3>${character.name}</h3>
       <p>Species: ${character.species}</p>
       <p>Power: ${character.power}</p>
-<p>Gear Colour: ${character.color}</p>
-<p>Weapon: ${character.weapon}</p>
+      <p>Gear Colour: ${character.color}</p>
+      <p>Weapon: ${character.weapon}</p>
       <a href="character.html?name=${character.name}">View Details</a>
     `;
 
