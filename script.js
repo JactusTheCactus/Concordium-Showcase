@@ -19,16 +19,16 @@ fetch('characters.json')
 function loadCharacterCards(characters) {
   const characterContainer = document.getElementById('character-container');
 
-  characters.forEach(character => {
+  Object.values(characters).forEach(character => {
     const card = document.createElement('div');
     card.classList.add('character-card');
 
     card.innerHTML = `
-      <h3>${character.name} ${character.rank}</h3>
-      <p>Species: ${character.species}</p>
-      <p>Power: ${character.power}</p>
-      <p>Gear Colour: ${character.colour}</p>
-      <p>Weapon: ${character.weapon}</p>
+      <h3>${character.name} (${character.rank})</h3>
+      <p><strong>Species:</strong> ${character.species || 'Unknown'}</p>
+      <p><strong>Power:</strong> ${character.power || 'Unknown'}</p>
+      <p><strong>Gear Colour:</strong> ${character.colour || 'Unknown'}</p>
+      <p><strong>Weapon:</strong> ${character.weapon || 'None'}</p>
       <a href="character.html?name=${character.name}">View Details</a>
     `;
 
@@ -38,18 +38,23 @@ function loadCharacterCards(characters) {
 
 // Function to load character details (for character.html)
 function loadCharacterDetails(characters, characterName) {
-  const character = characters.find(c => c.name === characterName);
+  const character = Object.values(characters).find(c => c.name === characterName);
 
   if (character) {
     // Populate character details
-    document.getElementById('character-name').textContent = `${character.name} ${character.rank}, ${character.animal} sin of ${character.sin}`;
+    document.getElementById('character-name').textContent = `${character.name} (${character.rank})`;
 
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
-      <p>Species: ${character.species}</p>
-      <p>Power: ${character.power}</p>
-      <p>Gear Colour: ${character.colour}</p>
-      <p>Weapon: ${character.weapon}</p>
+      <p><strong>Aspect:</strong> ${character.aspect}</p>
+      <p><strong>Species:</strong> ${character.species || 'Unknown'}</p>
+      <p><strong>Power:</strong> ${character.power || 'Unknown'}</p>
+      <p><strong>Gear Colour:</strong> ${character.colour || 'Unknown'}</p>
+      <p><strong>Weapon:</strong> ${character.weapon || 'None'}</p>
+      <p><strong>Animal:</strong> ${character.animal || 'None'}</p>
+      <p><strong>Epithet:</strong> ${character.epithet || 'None'}</p>
+      <p><strong>Alignment:</strong> ${character.alignment}</p>
+      <p><strong>Inverse:</strong> ${character.inverse}</p>
       <a href="index.html">Back to Showcase</a>
     `;
   } else {
