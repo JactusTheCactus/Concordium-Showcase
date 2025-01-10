@@ -48,8 +48,9 @@ function loadCharacterDetails(characters, characterName) {
     detailsContainer.innerHTML = `
       <p>Species: ${character.species}</p>
       <p>Power: ${character.power}</p>
-<p>Gear Colour: ${character.color}</p>
-<p>Weapon: ${character.weapon}</p>
+      <p>Gear Colour: ${character.color}</p>
+      <p>Weapon: ${character.weapon}</p>
+      <a href="index.html">Back to Showcase</a>
     `;
   } else {
     // Handle case where character is not found
