@@ -24,7 +24,7 @@ function loadCharacterCards(characters) {
     card.classList.add('character-card');
 
     card.innerHTML = `
-      <h3>${character.name}</h3>
+      <h3>${character.name} ${character.rank}</h3>
       <p>Species: ${character.species}</p>
       <p>Power: ${character.power}</p>
       <p>Gear Colour: ${character.color}</p>
