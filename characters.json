@@ -2,6 +2,7 @@
   "characters": [
     {
       "name": "Name",
+      "sin": "Sin",
       "alignment": "Alignment",
       "rank": "Rank",
       "animal": "Animal",
