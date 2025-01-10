@@ -1,3 +1,7 @@
+// Get the query parameter from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const characterName = urlParams.get('name'); // e.g., "Invidia"
+
 // Fetch the character data from the JSON file
 fetch('characters.json')
   .then(response => response.json()) // Parse the JSON
