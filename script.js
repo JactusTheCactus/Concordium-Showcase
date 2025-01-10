@@ -29,6 +29,21 @@ fetch('characters.json')
 const urlParams = new URLSearchParams(window.location.search);
 const characterName = urlParams.get('name'); // e.g., "Invidia"
 
+data.characters.forEach(character => {
+  const card = document.createElement('div');
+  card.classList.add('character-card');
+
+  card.innerHTML = `
+    <img src="${character.image}" alt="${character.name}">
+    <h3>${character.name}</h3>
+    <p>Alignment: ${character.alignment}</p>
+    <p>Rank: ${character.rank}</p>
+    <a href="character.html?name=${character.name}">View Details</a>
+  `;
+
+  characterContainer.appendChild(card);
+});
+
 // Fetch the character data
 fetch('characters.json')
   .then(response => response.json())
