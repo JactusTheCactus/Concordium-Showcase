@@ -1,16 +1,15 @@
 {
   "characters": [
     {
-      "name": "Name",
-      "sin": "Sin",
-      "alignment": "Alignment",
-      "rank": "Rank",
-      "animal": "Animal",
-      "weapon": "Weapon",
-      "color": "Colour",
-      "power": "Power",
-      "species": "Species",
-      "inverse": "Inverse"
+      "name": "Ira",
+      "sin": "Wrath",
+      "alignment": "Sin",
+      "rank": "Bellatoria",
+      "animal": "Kraken",
+      "weapon": "Chainwhip",
+      "color": "Red",
+      "power": "Apocalyptic Strength",
+      "species": "Demon"
     }
   ]
 }
