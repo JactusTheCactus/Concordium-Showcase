@@ -24,10 +24,11 @@ function loadCharacterCards(characters) {
     card.classList.add('character-card');
 
     card.innerHTML = `
-      <img src="${character.image}" alt="${character.name}">
       <h3>${character.name}</h3>
-      <p>Alignment: ${character.alignment}</p>
-      <p>Rank: ${character.rank}</p>
+      <p>Species: ${character.species}</p>
+      <p>Power: ${character.power}</p>
+<p>Gear Colour: ${character.color}</p>
+<p>Weapon: ${character.weapon}</p>
       <a href="character.html?name=${character.name}">View Details</a>
     `;
 
@@ -45,12 +46,10 @@ function loadCharacterDetails(characters, characterName) {
 
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
-      <img src="${character.image}" alt="${character.name}">
-      <p><strong>Alignment:</strong> ${character.alignment}</p>
-      <p><strong>Rank:</strong> ${character.rank}</p>
-      <p><strong>Power:</strong> ${character.power}</p>
-      <p><strong>Species:</strong> ${character.species}</p>
-      <p><strong>Inverse:</strong> ${character.inverse}</p>
+      <p>Species: ${character.species}</p>
+      <p>Power: ${character.power}</p>
+<p>Gear Colour: ${character.color}</p>
+<p>Weapon: ${character.weapon}</p>
     `;
   } else {
     // Handle case where character is not found
