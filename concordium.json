@@ -1,1 +1,15 @@
-
+{
+  "cincordants": [
+    {
+      "name": "Name",
+      "alignment": "Sin/Virtue",
+      "rank": "Rank",
+      "animal": "Animal",
+      "weapon": "Weapon",
+      "colour": "Colour",
+      "power": "Power",
+      "species": "Species",
+      "inverse": "Inverse"
+    }
+  ]
+}
