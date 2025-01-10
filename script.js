@@ -15,7 +15,7 @@ fetch('characters.json')
         <p>Power: ${character.power}</p>
         <p>Gear Colour: ${character.color}</p>
         <p>Weapon: ${character.weapon}</p>
-        <p>Inverse: ${character.inverse}</p>
+        <p>Inverse Concordant: ${character.inverse}</p>
       `;
 
       // Append the card to the container
