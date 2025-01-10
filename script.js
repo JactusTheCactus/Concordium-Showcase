@@ -11,10 +11,11 @@ fetch('characters.json')
       
       card.innerHTML = `
         <h3>${character.name} ${character.rank}, ${character.animal} sin of ${character.sin}</h3>
-        <p>Alignment: ${character.alignment}</p>
-        <p>Power: ${character.power}</p>
-        <p>Species: ${character.species}</p>
-        <p>Inverse: ${character.inverse}</p>
+        <p>${character.species}</p>
+        <p>${character.power}</p>
+        <p>${character.color}</p>
+        <p>${character.weapon}</p>
+        <p>${character.inverse}</p>
       `;
 
       // Append the card to the container
