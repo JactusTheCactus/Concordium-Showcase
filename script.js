@@ -27,7 +27,7 @@ function loadCharacterCards(characters) {
       <h3>${character.name} ${character.rank}</h3>
       <p>Species: ${character.species}</p>
       <p>Power: ${character.power}</p>
-      <p>Gear Colour: ${character.color}</p>
+      <p>Gear Colour: ${character.colour}</p>
       <p>Weapon: ${character.weapon}</p>
       <a href="character.html?name=${character.name}">View Details</a>
     `;
@@ -48,7 +48,7 @@ function loadCharacterDetails(characters, characterName) {
     detailsContainer.innerHTML = `
       <p>Species: ${character.species}</p>
       <p>Power: ${character.power}</p>
-      <p>Gear Colour: ${character.color}</p>
+      <p>Gear Colour: ${character.colour}</p>
       <p>Weapon: ${character.weapon}</p>
       <a href="index.html">Back to Showcase</a>
     `;
