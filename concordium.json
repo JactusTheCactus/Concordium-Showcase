@@ -1,15 +1,28 @@
 {
-  "cincordants": [
+  "characters": [
     {
-      "name": "Name",
-      "alignment": "Sin/Virtue",
-      "rank": "Rank",
-      "animal": "Animal",
-      "weapon": "Weapon",
-      "colour": "Colour",
-      "power": "Power",
-      "species": "Species",
-      "inverse": "Inverse"
+      "name": "Invidia",
+      "alignment": "Sin",
+      "rank": "Imperatore",
+      "animal": "Gorgon",
+      "weapon": "Staff",
+      "color": "Blue",
+      "power": "Mimic",
+      "species": "Changeling",
+      "inverse": "Kindness",
+      "image": "images/invidia.jpg"
+    },
+    {
+      "name": "Caritas",
+      "alignment": "Virtue",
+      "rank": "Ferratorium",
+      "animal": "Dove",
+      "weapon": "Bow",
+      "color": "White",
+      "power": "Healing",
+      "species": "Angel",
+      "inverse": "Greed",
+      "image": "images/caritas.jpg"
     }
   ]
 }
