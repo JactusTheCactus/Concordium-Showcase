@@ -10,7 +10,6 @@ fetch('characters.json')
       card.classList.add('character-card');
       
       card.innerHTML = `
-        <img src="${character.image}" alt="${character.name}">
         <h3>${character.name}</h3>
         <p>Alignment: ${character.alignment}</p>
         <p>Rank: ${character.rank}</p>
