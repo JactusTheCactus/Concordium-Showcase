@@ -1,19 +1,24 @@
 // Fetch character data
 fetch('characters.json')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    console.log('JSON fetched successfully');
+    return response.json();
+  })
   .then(data => {
+    console.log('Parsed JSON:', data);
+
     const urlParams = new URLSearchParams(window.location.search);
-    const characterName = urlParams.get('name'); // Check for "name" parameter in the URL
+    const characterName = urlParams.get('name');
 
     if (characterName) {
-      // We're on the character.html page
-      loadCharacterDetails(data.characters, characterName);
+      loadCharacterDetails(data, characterName);
     } else {
-      // We're on the index.html page
-      loadCharacterCards(data.characters);
+      loadCharacterCards(data);
     }
   })
   .catch(error => console.error('Error fetching character data:', error));
+
 
 // Function to load character cards (for index.html)
 function loadCharacterCards(characters) {
