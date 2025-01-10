@@ -1,16 +1,15 @@
 {
   "characters": [
     {
-      "name": "Invidia",
-      "alignment": "Sin",
-      "rank": "Imperatore",
-      "animal": "Gorgon",
-      "weapon": "Staff",
-      "color": "Blue",
-      "power": "Mimic",
-      "species": "Changeling",
-      "inverse": "Kindness",
-      "image": "images/invidia.jpg"
+      "name": "Name",
+      "alignment": "Alignment",
+      "rank": "Rank",
+      "animal": "Animal",
+      "weapon": "Weapon",
+      "color": "Colour",
+      "power": "Power",
+      "species": "Species",
+      "inverse": "Inverse"
     }
   ]
 }
