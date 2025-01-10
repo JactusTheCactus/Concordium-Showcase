@@ -11,18 +11,6 @@
       "species": "Changeling",
       "inverse": "Kindness",
       "image": "images/invidia.jpg"
-    },
-    {
-      "name": "Caritas",
-      "alignment": "Virtue",
-      "rank": "Ferratorium",
-      "animal": "Dove",
-      "weapon": "Bow",
-      "color": "White",
-      "power": "Healing",
-      "species": "Angel",
-      "inverse": "Greed",
-      "image": "images/caritas.jpg"
     }
   ]
 }
