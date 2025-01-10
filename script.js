@@ -53,7 +53,7 @@ function loadCharacterDetails(characters, characterName) {
   
   const character = characters[characterKey]; // Access the matched character
   
-  if (character.toLowerCase()) {
+  if (character) {
     // Populate character details
     document.getElementById('character-name').textContent = `${character.name} ${character.rank}, ${character.animal} sin of ${character.aspect}`;
 
