@@ -44,9 +44,9 @@ function loadCharacterCards(characters) {
 
 // Function to load character details (for character.html)
 function loadCharacterDetails(characters, characterName) {
-  const character = characters[characterName.toLowerCase()]; // Match based on name (case insensitive)
+  const character = characters[characterName]; // Match based on name (case insensitive)
 
-  if (character.toLowerCase()) {
+  if (character) {
     // Populate character details
     document.getElementById('character-name').textContent = `${character.name} ${character.rank}, ${character.animal} sin of ${character.aspect}`;
 
