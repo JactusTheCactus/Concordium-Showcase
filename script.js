@@ -10,14 +10,12 @@ fetch('characters.json')
       card.classList.add('character-card');
       
       card.innerHTML = `
-        <img src="${character.image}" alt="${character.name}">
-        <h3>${character.name}</h3>
-        <p>Alignment: ${character.alignment}</p>
-        <p>Rank: ${character.rank}</p>
-        <p>Power: ${character.power}</p>
-        <p>Species: ${character.species}</p>
-        <p>Inverse: ${character.inverse}</p>
-      `;
+    <img src="${character.image}" alt="${character.name}">
+    <h3>${character.name}</h3>
+    <p>Alignment: ${character.alignment}</p>
+    <p>Rank: ${character.rank}</p>
+    <a href="character.html?name=${character.name}">View Details</a>
+  `;
 
       // Append the card to the container
       characterContainer.appendChild(card);
@@ -32,14 +30,6 @@ const characterName = urlParams.get('name'); // e.g., "Invidia"
 data.characters.forEach(character => {
   const card = document.createElement('div');
   card.classList.add('character-card');
-
-  card.innerHTML = `
-    <img src="${character.image}" alt="${character.name}">
-    <h3>${character.name}</h3>
-    <p>Alignment: ${character.alignment}</p>
-    <p>Rank: ${character.rank}</p>
-    <a href="character.html?name=${character.name}">View Details</a>
-  `;
 
   characterContainer.appendChild(card);
 });
