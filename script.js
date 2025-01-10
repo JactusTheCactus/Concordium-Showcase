@@ -35,7 +35,7 @@ function loadCharacterCards(characters) {
       <p>Power: ${character.power}</p>
       <p>Gear Colour: ${character.colour}</p>
       <p>Weapon: ${character.weapon}</p>
-      <a href="character.html?name=${character.name}">View Details</a>
+      <a href="character.html?name=${character.name.toLowerCase()}">View Details</a>
     `;
 
     characterContainer.appendChild(card);
