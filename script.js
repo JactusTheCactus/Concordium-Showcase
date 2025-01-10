@@ -19,38 +19,40 @@ fetch('characters.json')
 function loadCharacterCards(characters) {
   const characterContainer = document.getElementById('character-container');
 
-  characters.forEach(character => {
+  for (const key in characters) {
+    const character = characters[key]; // Access character data by key
     const card = document.createElement('div');
     card.classList.add('character-card');
 
     card.innerHTML = `
-      <img src="${character.image}" alt="${character.name}">
-      <h3>${character.name}</h3>
-      <p>Alignment: ${character.alignment}</p>
-      <p>Rank: ${character.rank}</p>
+      <h3>${character.name} ${character.rank}</h3>
+      <p>Species: ${character.species || 'Unknown'}</p>
+      <p>Power: ${character.power}</p>
+      <p>Gear Colour: ${character.colour}</p>
+      <p>Weapon: ${character.weapon}</p>
       <a href="character.html?name=${character.name}">View Details</a>
     `;
 
     characterContainer.appendChild(card);
-  });
+  }
 }
 
 // Function to load character details (for character.html)
 function loadCharacterDetails(characters, characterName) {
-  const character = characters.find(c => c.name === characterName);
+  const character = characters[characterName.toLowerCase()]; // Match based on name (case insensitive)
 
   if (character) {
     // Populate character details
-    document.getElementById('character-name').textContent = character.name;
+    document.getElementById('character-name').textContent = `${character.name} ${character.rank}, ${character.animal} sin of ${character.aspect}`;
 
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
-      <img src="${character.image}" alt="${character.name}">
-      <p><strong>Alignment:</strong> ${character.alignment}</p>
-      <p><strong>Rank:</strong> ${character.rank}</p>
+      <p><strong>Species:</strong> ${character.species || 'Unknown'}</p>
       <p><strong>Power:</strong> ${character.power}</p>
-      <p><strong>Species:</strong> ${character.species}</p>
+      <p><strong>Gear Colour:</strong> ${character.colour}</p>
+      <p><strong>Weapon:</strong> ${character.weapon}</p>
       <p><strong>Inverse:</strong> ${character.inverse}</p>
+      <a href="index.html">Back to Showcase</a>
     `;
   } else {
     // Handle case where character is not found
