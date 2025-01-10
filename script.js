@@ -20,7 +20,7 @@ function loadCharacterCards(characters) {
   const characterContainer = document.getElementById('character-container');
 
   for (const key in characters) {
-    const character = characters[key]; // Access character data by key
+    const character = characters[key.toLowerCase()]; // Access character data by key
     const card = document.createElement('div');
     card.classList.add('character-card');
 
