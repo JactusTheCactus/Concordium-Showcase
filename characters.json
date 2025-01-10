@@ -11,7 +11,7 @@
     "rank": "Imperatore",
     "alignment": "Sin",
     "inverse": "kindness",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "gluttony": {
     "name": "Gula",
@@ -20,12 +20,12 @@
     "weapon": "Battleaxe",
     "colour": "Purple",
     "power": "Absorbtion",
-    "species": null,
+    "species": "[N/A]",
     "sex": "M",
     "rank": "Venatorium",
     "alignment": "Sin",
     "inverse": "temperance",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "greed": {
     "name": "Avaritia",
@@ -34,12 +34,12 @@
     "weapon": "Warhammer",
     "colour": "Green",
     "power": "Ferrokinesis",
-    "species": null,
+    "species": "[N/A]",
     "sex": "M",
     "rank": "Ferratorium",
     "alignment": "Sin",
     "inverse": "charity",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "lust": {
     "name": "Luxuria",
@@ -53,7 +53,7 @@
     "rank": "Dominum",
     "alignment": "Sin",
     "inverse": "chastity",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "pride": {
     "name": "Superbia",
@@ -67,7 +67,7 @@
     "rank": "Luminorium",
     "alignment": "Sin",
     "inverse": "humility",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "sloth": {
     "name": "Acedia",
@@ -81,7 +81,7 @@
     "rank": "Exaltum",
     "alignment": "Sin",
     "inverse": "diligence",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "wrath": {
     "name": "Ira",
@@ -99,100 +99,100 @@
   },
   "charity": {
     "name": "Caritas",
-    "animal": null,
+    "animal": "[N/A]",
     "aspect": "Charity",
-    "weapon": null,
-    "colour": null,
-    "power": null,
-    "species": null,
+    "weapon": "[N/A]",
+    "colour": "[N/A]",
+    "power": "[N/A]",
+    "species": "[N/A]",
     "sex": "F",
     "rank": "Ferratorium",
     "alignment": "Virtue",
     "inverse": "greed",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "chastity": {
     "name": "Castitas",
-    "animal": null,
+    "animal": "[N/A]",
     "aspect": "Chastity",
-    "weapon": null,
-    "colour": null,
-    "power": null,
-    "species": null,
+    "weapon": "[N/A]",
+    "colour": "[N/A]",
+    "power": "[N/A]",
+    "species": "[N/A]",
     "sex": "M",
     "rank": "Bellatorium",
     "alignment": "Virtue",
     "inverse": "lust",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "diligence": {
     "name": "Diligentia",
-    "animal": null,
+    "animal": "[N/A]",
     "aspect": "Diligence",
-    "weapon": null,
-    "colour": null,
-    "power": null,
-    "species": null,
+    "weapon": "[N/A]",
+    "colour": "[N/A]",
+    "power": "[N/A]",
+    "species": "[N/A]",
     "sex": "M",
     "rank": "Venatorium",
     "alignment": "Virtue",
     "inverse": "sloth",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "kindness": {
     "name": "Humanitas",
-    "animal": null,
+    "animal": "[N/A]",
     "aspect": "Kindness",
-    "weapon": null,
-    "colour": null,
-    "power": null,
-    "species": null,
+    "weapon": "[N/A]",
+    "colour": "[N/A]",
+    "power": "[N/A]",
+    "species": "[N/A]",
     "sex": "F",
     "rank": "Luminorium",
     "alignment": "Virtue",
     "inverse": "envy",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "humility": {
     "name": "Humilitas",
-    "animal": null,
+    "animal": "[N/A]",
     "aspect": "Humility",
-    "weapon": null,
-    "colour": null,
-    "power": null,
-    "species": null,
+    "weapon": "[N/A]",
+    "colour": "[N/A]",
+    "power": "[N/A]",
+    "species": "[N/A]",
     "sex": "M",
     "rank": "Exaltum",
     "alignment": "Virtue",
     "inverse": "pride",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "patience": {
     "name": "Patientia",
-    "animal": null,
+    "animal": "[N/A]",
     "aspect": "Patience",
-    "weapon": null,
-    "colour": null,
-    "power": null,
-    "species": null,
+    "weapon": "[N/A]",
+    "colour": "[N/A]",
+    "power": "[N/A]",
+    "species": "[N/A]",
     "sex": "M",
     "rank": "Imperatore",
     "alignment": "Virtue",
     "inverse": "wrath",
-    "epithet": null
+    "epithet": "[N/A]"
   },
   "temperance": {
     "name": "Temperantia",
-    "animal": null,
+    "animal": "[N/A]",
     "aspect": "Temperance",
-    "weapon": null,
-    "colour": null,
-    "power": null,
-    "species": null,
+    "weapon": "[N/A]",
+    "colour": "[N/A]",
+    "power": "[N/A]",
+    "species": "[N/A]",
     "sex": "F",
     "rank": "Dominum",
     "alignment": "Virtue",
     "inverse": "gluttony",
-    "epithet": null
+    "epithet": "[N/A]"
   }
 }
