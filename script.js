@@ -51,7 +51,7 @@ function loadCharacterDetails(characters, characterName) {
     key => key.toLowerCase() === lowerCaseName
   );
   
-  const character = characters[characterKey]; // Access the matched character
+  const character = characters[characterKey].toLowerCase(); // Access the matched character
   
   if (character) {
     // Populate character details
