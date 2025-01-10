@@ -10,9 +10,8 @@ fetch('characters.json')
       card.classList.add('character-card');
       
       card.innerHTML = `
-        <h3>${character.name}</h3>
+        <h3>${character.name} ${character.rank}, ${character.animal} sin of ${character.sin}</h3>
         <p>Alignment: ${character.alignment}</p>
-        <p>Rank: ${character.rank}</p>
         <p>Power: ${character.power}</p>
         <p>Species: ${character.species}</p>
         <p>Inverse: ${character.inverse}</p>
