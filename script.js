@@ -54,6 +54,7 @@ function loadCharacterDetails(characters, characterName) {
   if (character) {
     // Populate character details
     document.getElementById('character-name').innerHTML = `<u><i>${character.name}</i></u> <u>${character.rank}</u>`;
+
     const inverseCharacter = characters[character.inverse]
 
     const detailsContainer = document.getElementById('character-details');
@@ -63,7 +64,7 @@ function loadCharacterDetails(characters, characterName) {
       <strong>Power:</strong> ${character.power}<br>
       <strong>Gear Colour:</strong> ${character.colour}<br>
       <strong>Weapon:</strong> ${character.weapon}<br>
-      <strong>Inverse:</strong> ${inverseCharacter.name}</p>
+      <strong>Inverse:</strong> ${inverseCharacter.name} ${InverseCharacter.rank}</p>
       <a href="index.html">Back to Showcase</a>
     `;
   } else {
