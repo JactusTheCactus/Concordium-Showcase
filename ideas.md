@@ -1,17 +1,17 @@
 # Ideas
 ## Stats
-- DnD
-  - Charisma
-  - Constitution
-  - Dexterity
-  - Intelligence
-  - Strength
-  - Wisdom
-- S.P.E.C.I.A.L.
- - A
- - C
- - E
- - I
- - L
- - P
- - S
+### DnD
+- Charisma
+- Constitution
+- Dexterity
+- Intelligence
+- Strength
+- Wisdom
+### S.P.E.C.I.A.L.
+- Strength
+- Perception
+- Endurance
+- Charisma
+- Intelligence
+- Agility
+- Luck
