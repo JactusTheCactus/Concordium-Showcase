@@ -62,7 +62,7 @@ function loadCharacterDetails(characters, characterName) {
       <strong>Power:</strong> ${character.power}<br>
       <strong>Gear Colour:</strong> ${character.colour}<br>
       <strong>Weapon:</strong> ${character.weapon}<br>
-      <strong>Inverse:</strong> ${character.inverse}</p>
+      <strong>Inverse:</strong> ${character.inverse.name}</p>
       <a href="index.html">Back to Showcase</a>
     `;
   } else {
