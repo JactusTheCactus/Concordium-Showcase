@@ -15,3 +15,8 @@
 - Intelligence
 - Agility
 - Luck
+### Concordium
+- Strength
+- Speed
+- Arcane
+- Intelligence
