@@ -29,7 +29,7 @@ function loadCharacterCards(characters) {
     card.classList.add('character-card');
 
     card.innerHTML = `
-      <h3>${character.name} ${character.rank}</h3>
+      <h3><i>${character.name}</i><br>${character.rank}</h3>
       <p>Species: ${character.species || 'Unknown'}</p>
       <p>Power: ${character.power}</p>
       <p>Gear Colour: ${character.colour}</p>
@@ -53,16 +53,15 @@ function loadCharacterDetails(characters, characterName) {
 
   if (character) {
     // Populate character details
-    document.getElementById('character-name').textContent = 
-      `${character.name} ${character.rank}, ${character.animal} sin of ${character.aspect}`;
+    document.getElementById('character-name').innerHTML = `<u><i>${character.name}</i></u> <u>${character.rank}</u>, <u>${character.animal}</u> sin of <u>${character.aspect}</u>`;
 
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
-      <p><strong>Species:</strong> ${character.species}</p>
-      <p><strong>Power:</strong> ${character.power}</p>
-      <p><strong>Gear Colour:</strong> ${character.colour}</p>
-      <p><strong>Weapon:</strong> ${character.weapon}</p>
-      <p><strong>Inverse:</strong> ${character.inverse}</p>
+      <p><strong>Species:</strong> ${character.species}<br>
+      <strong>Power:</strong> ${character.power}<br>
+      <strong>Gear Colour:</strong> ${character.colour}<br>
+      <strong>Weapon:</strong> ${character.weapon}<br>
+      <strong>Inverse:</strong> ${character.inverse}</p>
       <a href="index.html">Back to Showcase</a>
     `;
   } else {
