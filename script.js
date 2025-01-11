@@ -33,8 +33,7 @@ function loadCharacterCards(characters) {
 
     card.innerHTML = `
       <h3><i>${character.name}</i><br>${character.rank}</h3>
-      <p>Power: <u>${character.power}</u><br>
-      Weapon: <u>${character.weapon}</u></p>
+      <p>${character.animal} ${character.alignment} of ${character.aspect}</p>
       <a href="character.html?name=${character.name}">View Details</a>
     `;
 
