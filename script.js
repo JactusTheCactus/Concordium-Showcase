@@ -59,7 +59,7 @@ function loadCharacterDetails(characters, characterName) {
 
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
-      <u><b>${character.animal}</u> sin of <u>${character.aspect}</b></u>
+      <u><b>${character.animal}</u> ${character.alignment} of <u>${character.aspect}</b></u>
       <p><strong>Species:</strong> ${character.species}<br>
       <strong>Power:</strong> ${character.power}<br>
       <strong>Gear Colour:</strong> ${character.colour}<br>
