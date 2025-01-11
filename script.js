@@ -68,7 +68,7 @@ function loadCharacterDetails(characters, characterName) {
       <strong>Gear Colour:</strong> ${character.colour}<br>
       <strong>Weapon:</strong> ${character.weapon}<br>
       <strong>Inverse:</strong><br>
-      <i>${inverseCharacter.name}</i></p>
+      <i>${fullName(inverseCharacter)}</i></p>
       <a href="index.html">Back to Showcase</a>
     `;
   } else {
