@@ -53,10 +53,11 @@ function loadCharacterDetails(characters, characterName) {
 
   if (character) {
     // Populate character details
-    document.getElementById('character-name').innerHTML = `<u><i>${character.name}</i></u> <u>${character.rank}</u>, <u>${character.animal}</u> sin of <u>${character.aspect}</u>`;
+    document.getElementById('character-name').innerHTML = `<u><i>${character.name}</i></u> <u>${character.rank}</u>`;
 
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
+      <u>${character.animal}</u> sin of <u>${character.aspect}</u>
       <p><strong>Species:</strong> ${character.species}<br>
       <strong>Power:</strong> ${character.power}<br>
       <strong>Gear Colour:</strong> ${character.colour}<br>
