@@ -1,8 +1,8 @@
 // Fetch character data
 fetch('characters.json')
-function fullName(character) {
-  return `${character.name} ${character.rank}`
-}
+//function fullName(character) {
+  //return `${character.name} ${character.rank}`
+//}
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     console.log('JSON fetched successfully');
