@@ -1,8 +1,5 @@
 // Fetch character data
 fetch('characters.json')
-function fullName(character) {
-  return `${character.name} ${character.rank || ''}`;
-}
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     console.log('JSON fetched successfully');
@@ -68,7 +65,7 @@ function loadCharacterDetails(characters, characterName) {
       <strong>Gear Colour:</strong> ${character.colour}<br>
       <strong>Weapon:</strong> ${character.weapon}<br>
       <strong>Inverse:</strong><br>
-      <i>${inverseCharacter.fullName || 'unknown'}</i></p>
+      <i>${inverseCharacter.name}</i></p>
       <a href="index.html">Back to Showcase</a>
     `;
   } else {
