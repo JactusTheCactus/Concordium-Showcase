@@ -1,5 +1,6 @@
 // Fetch character data
 fetch('characters.json')
+function fullName(character) {}
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     console.log('JSON fetched successfully');
