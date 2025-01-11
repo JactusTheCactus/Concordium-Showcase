@@ -1,5 +1,9 @@
 # Ideas
 ## Stats
 - DnD
+  - Charisma
+  - Constitution
   - Dexterity
+  - Intelligence
   - Strength
+  - Wisdom
