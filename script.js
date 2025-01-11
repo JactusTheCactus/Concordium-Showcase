@@ -58,7 +58,7 @@ function loadCharacterDetails(characters, characterName) {
 
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
-      <p><strong>Species:</strong> ${character.species || 'Unknown'}</p>
+      <p><strong>Species:</strong> ${character.species}</p>
       <p><strong>Power:</strong> ${character.power}</p>
       <p><strong>Gear Colour:</strong> ${character.colour}</p>
       <p><strong>Weapon:</strong> ${character.weapon}</p>
