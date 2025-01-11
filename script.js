@@ -31,11 +31,11 @@ function loadCharacterCards(characters) {
     const card = document.createElement('div');
     card.classList.add('character-card');
 
-    card.innerHTML = `
+    card.innerHTML = removeExtraSpaces(`
       <h3><i>${character.name}</i><br>${character.rank}</h3>
       <p>${character.animal} ${character.alignment} of ${character.aspect}</p>
       <a href="character.html?name=${character.name}">View Details</a>
-    `;
+    `);
 
     characterContainer.appendChild(card);
   }
