@@ -43,11 +43,18 @@ function loadCharacterCards(characters) {
 
 // Function to load character details (for character.html)
 function loadCharacterDetails(characters, characterName) {
-  const character = characters[characterName]; // Match based on name (case insensitive)
+  // Normalize characterName for case-insensitive matching
+  const normalizedCharacterName = characterName.toLowerCase();
+
+  // Find the matching character object
+  const character = Object.values(characters).find(
+    char => char.name.toLowerCase() === normalizedCharacterName
+  );
 
   if (character) {
     // Populate character details
-    document.getElementById('character-name').textContent = `${character.name} ${character.rank}, ${character.animal} sin of ${character.aspect}`;
+    document.getElementById('character-name').textContent = 
+      `${character.name} ${character.rank}, ${character.animal} sin of ${character.aspect}`;
 
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
