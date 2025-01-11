@@ -1,4 +1,7 @@
 // Fetch character data
+function removeExtraSpaces(str) {
+  return str.replace(/\s+/g, " ").trim();
+}
 fetch('characters.json')
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
