@@ -7,3 +7,11 @@
   - Intelligence
   - Strength
   - Wisdom
+- S.P.E.C.I.A.L.
+ - A
+ - C
+ - E
+ - I
+ - L
+ - P
+ - S
