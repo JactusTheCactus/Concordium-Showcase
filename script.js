@@ -1,7 +1,7 @@
 // Fetch character data
 fetch('characters.json')
 function fullName(character) {
-  return `${character.name} ${character.rank || ''}`.trim();
+  return `${character.name} ${character.rank || ''}`;
 }
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
