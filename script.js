@@ -33,8 +33,8 @@ function loadCharacterCards(characters) {
 
     card.innerHTML = `
       <h3><i>${character.name}</i><br>${character.rank}</h3>
-      <p>Power: ${character.power}<br>
-      Weapon: ${character.weapon}</p>
+      <p>Power: <u>${character.power}</u><br>
+      Weapon: <u>${character.weapon}</u></p>
       <a href="character.html?name=${character.name}">View Details</a>
     `;
 
@@ -64,10 +64,10 @@ function loadCharacterDetails(characters, characterName) {
     const detailsContainer = document.getElementById('character-details');
     detailsContainer.innerHTML = `
       <u><b>${character.animal}</u> ${character.alignment} of <u>${character.aspect}</b></u>
-      <p><strong>Species:</strong> ${character.species}<br>
-      <strong>Power:</strong> ${character.power}<br>
-      <strong>Gear Colour:</strong> ${character.colour}<br>
-      <strong>Weapon:</strong> ${character.weapon}<br>
+      <p><strong>Species:</strong> <u>${character.species}</u><br>
+      <strong>Power:</strong> <u>${character.power}</u><br>
+      <strong>Gear Colour:</strong> <u>${character.colour}</u><br>
+      <strong>Weapon:</strong> <u>${character.weapon}</u><br>
       <strong>Inverse:</strong><br>
       <i>${removeExtraSpaces(fullName(inverseCharacter))}</i></p>
       <a href="index.html">Back to Showcase</a>
