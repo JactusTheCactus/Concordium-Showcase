@@ -58,7 +58,7 @@ function loadCharacterDetails(characters, characterName) {
 
     const inverseCharacter = characters[character.inverse]
     function fullName(character) {
-      return `${character.name} ${character.rank}, ${character.animal} ${character.alignment} of ${character.aspect}`
+      return `<u>${character.name}</u> <u>${character.rank}</u>, <u>${character.animal}</u> ${character.alignment} of ${character.aspect}`
     }
 
     const detailsContainer = document.getElementById('character-details');
