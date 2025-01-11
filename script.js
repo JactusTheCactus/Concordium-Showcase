@@ -54,7 +54,7 @@ function loadCharacterDetails(characters, characterName) {
 
   if (character) {
     // Populate character details
-    document.getElementById('character-name').innerHTML = `<u><i>${character.name}</i></u> <u>${character.rank}</u>`;
+    document.getElementById('character-name').innerHTML = `<i>${character.name}</i> ${character.rank}`;
 
     const inverseCharacter = characters[character.inverse]
     function fullName(character) {
